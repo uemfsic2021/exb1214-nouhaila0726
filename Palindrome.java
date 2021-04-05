@@ -1,7 +1,15 @@
 public class Palindrome{
     public static boolean is_palindrome(String s)
     {
-        // add your code here
+     boolean is_palaindrome = false;
+     int i;
+      for (i = 0; i <= s.length()-1; i++) {
+        if (s.charAt(i)==s.charAt(s.length()-1-i))
+        {
         return true;
-    }
+        }
+      }
+      return false;
+
+}
 }
